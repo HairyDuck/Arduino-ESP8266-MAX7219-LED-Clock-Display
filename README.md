@@ -8,6 +8,30 @@ An ESP8266-based Arduino project showcasing a MAX7219 LED display for displaying
 - MAX7219 LED Module
 - Jumper wires
 
+## Circuit Diagram
+
+Connect the ESP8266 board to the MAX7219 LED Module as shown in the wiring diagram below:
+
+```
+        ESP8266           MAX7219 LED Module
+       (NodeMCU)            8 Digit Display
+ _______________       ________________________
+|               |     |                        |
+|     D5 (GPIO14)|---->|DIN (Data In)           |
+|               |     |                        |
+|     D6 (GPIO12)|---->|CS (Chip Select)        |
+|               |     |                        |
+|     D7 (GPIO13)|---->|CLK (Clock)             |
+|               |     |                        |
+|     3V3       |---->|VCC                     |
+|               |     |                        |
+|     GND       |---->|GND                     |
+|_______________|     |________________________|
+
+```
+
+Make sure to double-check the pin assignments and connections with your specific ESP8266 board and MAX7219 LED Module.
+
 ## Software Requirements
 
 - Arduino IDE
